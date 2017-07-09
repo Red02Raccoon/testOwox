@@ -1,0 +1,115 @@
+.makers {
+	margin-top: 38px;
+	@extend %clearfix;
+	padding: 0 10px;
+}
+
+.toppart--article {
+	margin-bottom: 20px;
+}
+
+.toppart__left {
+	float: left;
+	height: 20px;
+	width: 50%;
+}
+
+.toppart__right {
+	float: left;
+	width: 50%;
+}
+
+.makers__title {
+	font-size: 15px;
+}
+
+.button--makers {
+	width: 215px;
+	margin-left: 277px;
+}
+
+.button__link--makers:after {
+	display: inline-block;
+	content: "";
+	background-image: url("../images/arrow_button.png");
+	width: 19px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.logos {
+	@extend %clearfix;	
+	margin-top: 10px;
+	clear: both;
+	margin-bottom: 40px;
+}
+
+.logos__block {
+	width: 25%;
+	float: left;
+}
+
+.logos__block:nth-child(2n-1) {
+	margin-top: 5px;
+}
+
+.logos__list {
+	font-size: 0;
+}
+
+.logos__item {
+	display: inline-block;
+	width: 49%;
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #dddcdc;
+	border-bottom: 1px solid #dddcdc;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.logos__item:nth-child(n+1){
+	border-right: 1px solid #dddcdc;
+}
+
+.logos__item:nth-child(2n){
+	border-right: none;
+}
+
+.logos__item:nth-child(3), .logos__item:nth-child(4) {
+	border-bottom:  none;
+}
+
+.logos__item:nth-child(1), .logos__item:nth-child(2) {
+	border-top:  none;
+}
+
+.logos__link {
+	display: inline-block;
+	height: 50px;
+	vertical-align: middle;
+}
+
+
+.links {
+	padding: 0 10px;
+}
+
+.links__block {
+	display: inline-block;
+	width: 12.2%;
+	vertical-align: top;
+}
+
+.links__link {
+	line-height: 20px;
+	font-size: 11px;
+}
+
+.links__link:hover {
+	color: $redText;
+	background-image: none;
+}

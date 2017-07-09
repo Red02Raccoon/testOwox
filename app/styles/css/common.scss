@@ -1,0 +1,105 @@
+/*главные цвета сайта*/
+
+$redText: #d10000;
+$blueText: #105a8f;
+$grayText: #999999;
+$greenText: #5c9559;
+$darkText: #333333;
+$purpleText: #6640c7;
+
+/* общие стили сброс */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html, body, ul {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:visited {
+    color: $blueText;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* общие стили элементы страницы*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42;
+    color: $grayText;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    background-color: #fff;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper:after {
+    display: block;
+    content: "";
+    height: 310px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.button {
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0;
+    transform: skew(-20deg);
+    background: #fff;
+    box-shadow: inset 1px 1px 1px 1px #ebebeb;
+    margin-left: -10px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eceded 37%, #f6f6f6 53%, #ffffff 100%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eceded 37%,#f6f6f6 53%,#ffffff 100%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#eceded 37%,#f6f6f6 53%,#ffffff 100%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.button__link {
+    margin-left: 12px;
+    transform: skew(20deg);
+    display: inline-block;
+    background-image: none;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+

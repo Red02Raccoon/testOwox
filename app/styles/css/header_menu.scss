@@ -1,0 +1,130 @@
+/* header menu */
+.main-menu {
+	position: relative;
+}
+
+.menu__hidden {
+	position: absolute;
+	border:  1px solid #b4b4b4;
+	@include br(3px);
+	padding: 5px 5px 3px;
+	display: none;
+	background-color: #fff;
+	z-index: 3;
+}
+
+
+.menu__hidden--header {
+	top: 6px;
+	right: 6px;
+}
+
+
+.header__nav {
+	clear: both;
+}
+
+.menu {
+	font-size: 0;
+}
+
+.menu__item {
+	display: inline-block;
+	font-size: 13px;
+	color: $blueText;
+	margin-right: 13px;
+	line-height: 15px;
+}
+
+.menu__item:first-child {
+	margin-left: 0;
+}
+
+.menu__link--icon:before {
+	width: 15px;
+	height: 15px;
+	vertical-align: bottom;
+	display: inline-block;
+	content: "";
+	background-image: url("../images/question.png");
+	background-position: 0;
+	background-repeat: no-repeat;
+}
+
+.main-menu__list {
+	@extend %clearfix;
+	background: #7dafcf; /* Old browsers */
+	background: -moz-linear-gradient(top, #7dafcf 0%, #4b8eb9 3%, #126499 23%, #0c5c8f 40%, #044977 84%, #0e639a 95%, #317daf 95%, #5497c3 100%, #1e5799 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7dafcf 0%,#4b8eb9 3%,#126499 23%,#0c5c8f 40%,#044977 84%,#0e639a 95%,#317daf 95%,#5497c3 100%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7dafcf 0%,#4b8eb9 3%,#126499 23%,#0c5c8f 40%,#044977 84%,#0e639a 95%,#317daf 95%,#5497c3 100%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dafcf', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	border:  1px solid rgb(36, 97, 136);
+	@include br(5px);
+}
+
+.main-menu__item {
+	float: left;
+	width: 16.66666%;
+	border-right:  1px solid #174e71;
+	border-left:  1px solid #3276a2;
+}
+
+.main-menu__link {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	padding: 14px 0px 14px 27px;
+	margin-right: 29px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.main-menu__item:last-child .main-menu__link{
+	margin-right: 20px;	
+}
+
+.main-menu__link:visited {
+	color: white;
+}
+
+.main-menu__item:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 14px;
+	height: 14px;
+	background-image: url('../images/menu_arrow.png');
+	background-repeat: no-repeat;
+}
+
+.main-menu__item-small {
+	padding: 10px 0 9px 7px;
+	display: none;
+}
+
+.main-menu__link-small {
+	background-color: #fff;
+	position: relative;
+	padding: 5px 60px 5px 5px;
+	color: $darkText !important;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid #e2e3ea;
+}
+
+.main-menu__link-small:after {
+	display: inline-block;
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+	content: "";
+	border-top: 8px solid black;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	height: 0px;
+	width: 0px;
+	transform: translate(-50%,-50%);
+}

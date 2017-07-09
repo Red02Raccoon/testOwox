@@ -1,0 +1,83 @@
+.article {
+	margin-top: 36px;
+	padding: 0 10px;
+	padding-top: 40px;
+	border-top: 1px solid #e6e6e6;
+}
+
+.title {
+	font-weight: bold;
+	font-style: italic;
+	color: $darkText;
+	margin-bottom: 20px;
+}
+
+.title--article {
+	font-size: 20px;
+}
+
+.button--article {
+	width: 240px;
+	margin-left: 277px;
+}
+
+.button__link--acticle:after {
+	display: inline-block;
+	content: "";
+	background-image: url("../images/arrow_button.png");
+	width: 19px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.info {
+	clear: both;
+	@extend %clearfix;
+}
+
+.info:after {
+	display: block;
+	content: "";
+
+	height: 40px;
+	width: 100%;
+	border-bottom: 3px solid  white;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff 0%, fafafa9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fff 0%,#fafafa 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fff 0%,#fafafa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+}
+
+.info__article {
+	width: 25%;
+	float: left;
+		margin-bottom: 30px;
+}
+
+.info__title {
+	font-size: 15px;
+}
+
+.info__link:hover {
+	color: $purpleText;
+}
+
+.info__text {
+	color: $darkText;
+}
+
+.info__image {
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin-bottom: 15px;
+}
+
+.info__img {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
